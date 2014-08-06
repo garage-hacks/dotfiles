@@ -89,4 +89,8 @@ select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
+# cdとlsの省略
+setopt auto_cd
+function chpwd() { ls }
+
 
