@@ -90,8 +90,8 @@ zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
 #aliasの追加
-alias l="ls -G -w"
-alias ls="ls -a"
+alias l="ls"
+alias la="ls -a"
 alias lf="ls -F"
 alias ll="ls - l"
 
