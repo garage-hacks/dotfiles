@@ -7,6 +7,9 @@ export LANG=ja_JP.UTF-8
 autoload -Uz compinit
 compinit
 
+autoload predict-on
+predict-on
+
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
@@ -85,4 +88,5 @@ select-word-style default
 # / も区切りと扱うので、^W でディレクトリ１つ分を削除できる
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
+
 
