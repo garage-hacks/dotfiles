@@ -89,8 +89,9 @@ select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
-# cdとlsの省略
-setopt auto_cd
-function chpwd() { ls }
-
+#aliasの追加
+alias l="ls -G -w"
+alias ls="ls -a"
+alias lf="ls -F"
+alias ll="ls - l"
 
