@@ -19,6 +19,7 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 NeoBundleLazy 'Shougo/neocomplete.vim', {'autoload': {'insert' : 1}}
 NeoBundle     'Shougo/unite.vim'
+NeoBundle     'Shougo/neocomplcache'
 NeoBundleLazy 'ruby-matchit', {'autoload': {'filetypes': ['ruby', 'eruby', 'haml']}}
 NeoBundle     'kana/vim-fakeclip'
 NeoBundle     'scrooloose/syntastic'
@@ -26,6 +27,10 @@ NeoBundle     'tpope/vim-surround'
 NeoBundle     'wincent/Command-T'
 NeoBundle     'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle     'altercation/vim-colors-solarized'
+NeoBundle     'dag/vim2hs'
+NeoBundle     'eagletmt/ghcmod.vim'
+NeoBundle     'ujihisa/neco-ghc'
+NeoBundle     'nathanaelkane/vim-indent-guides'
 
 filetype on
 filetype plugin on
