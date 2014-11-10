@@ -1,0 +1,13 @@
+Command-T
+neobundle.vim
+neocomplete.vim
+neomru.vim
+ruby-matchit
+syntastic
+unite.vim
+vim-colors-solarized
+vim-fakeclip
+vim-jade
+vim-multiple-cursors
+vim-surround
+vimproc

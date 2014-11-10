@@ -1,3 +1,4 @@
+" NeoBundle {{{
 set nocompatible
 
 if has('vim_starting')
@@ -10,6 +11,8 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 au BufRead,BufNewFile,BufReadPre *.coffee setlocal filetype=coffee
+au BufRead,BufNewFile,BufReadPre *.clj    setlocal filetype=clojure
+au BufRead,BufNewFile,BufReadPre *.cljs   setlocal filetype=clojure
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -19,23 +22,22 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 NeoBundleLazy 'Shougo/neocomplete.vim', {'autoload': {'insert' : 1}}
 NeoBundle     'Shougo/unite.vim'
-NeoBundle     'Shougo/neocomplcache'
+NeoBundle     'Shougo/neomru.vim'
 NeoBundleLazy 'ruby-matchit', {'autoload': {'filetypes': ['ruby', 'eruby', 'haml']}}
+NeoBundle     'altercation/vim-colors-solarized'
 NeoBundle     'kana/vim-fakeclip'
 NeoBundle     'scrooloose/syntastic'
 NeoBundle     'tpope/vim-surround'
 NeoBundle     'wincent/Command-T'
-NeoBundle     'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
-NeoBundle     'altercation/vim-colors-solarized'
-NeoBundle     'dag/vim2hs'
-NeoBundle     'eagletmt/ghcmod.vim'
-NeoBundle     'ujihisa/neco-ghc'
-NeoBundle     'nathanaelkane/vim-indent-guides'
+NeoBundle     'terryma/vim-multiple-cursors'
+" }}}
 
 filetype on
+
 filetype plugin on
 filetype plugin indent on
 syntax on
+
 "---------------------------------------------------------------------------
 " Search {{{
 set ignorecase
@@ -66,6 +68,7 @@ set hidden
 
 set formatoptions-=or
 set formatoptions+=mM
+
 if has('mouse')
       set mouse=a
 endif
@@ -186,7 +189,7 @@ vnoremap <ESC> <ESC>
 inoremap <C-t>  <C-v><TAB>
 
 " emacs like key binds for insert mode
-inoremap <C-d> <Del>
+inoremap <C-d>  <Del>
 inoremap <C-h> <BS>
 inoremap <C-l> <C-o>zz
 inoremap <C-k> <C-o>D
@@ -216,6 +219,7 @@ nnoremap @i8  :<C-u>set tabstop=8 shiftwidth=8<cr>
 nnoremap <Space>e mmT(i<Space><ESC>h%i<Space><ESC>`ml
 nnoremap E viw
 
+call togglebg#map("@tbg")
 " }}}
 
 
@@ -303,6 +307,8 @@ endfunction
 
 let g:unite_source_file_mru_limit = 300
 let g:unite_source_directory_mru_limit = 300
+let g:unite_source_history_yank_limit = 1000
+
 " start on insert mode
 let g:unite_enable_start_insert=1
 "let g:unite_source_file_rec_ignore_pattern = '\%(^\|/\)\.$\|\~$\|\.\%(o\|so\|class\|a\|exe\|dll\|bak\|sw[po]\)$\|\%(^\|/\)\.\%(hg\|git\|bzr\|svn\|neocon\|android\|rvm\|gem\)\%($\|/\)'
@@ -360,5 +366,3 @@ let g:surround_custom_mapping.python = {
 let g:surround_custom_mapping.vim= {
       \'f':  "function! \r endfunction"
       \ }
-"}}}
-

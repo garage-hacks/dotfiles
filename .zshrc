@@ -1,7 +1,7 @@
 fpath=(/usr/local/share/zsh-completions $fpath)
 plugins=(git ruby osx bundler brew rails emoji-clock)
 
-
+ZSH_THEME="wedisagree"
 export LANG=ja_JP.UTF-8
 # 補完機能をハイライト
 autoload -Uz compinit
@@ -46,6 +46,7 @@ precmd () {
     LANG=en_US.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
+
 RPROMPT="%1(v|%F{green}%1v%f|)"
 
 setopt auto_pushd
@@ -112,8 +113,11 @@ zstyle ':zle:*' word-style unspecified
 
 #aliasの追加
 alias l="ls"
-alias la="ls -a"
+alias la="ls -al"
 alias lf="ls -F"
 alias ll="ls - l"
 
-source ~/zsh/.git-flow-completion.zsh
+#For MacVim
+if [[ "$OSTYPE" =~ "darwin" ]] && [ -d /Applications/MacVim.app/Contents/MacOS ];then
+  export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH
+fi
