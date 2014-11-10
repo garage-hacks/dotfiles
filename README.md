@@ -1,1 +1,1 @@
-## chansuke's setting files
+## my setting files
