@@ -1,1 +1,2 @@
-
+# Ignore unneeded files
+.DS_Store
