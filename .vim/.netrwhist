@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/yusuke/.vim'
 let g:netrw_dirhist_2='/Users/yusuke/.font'
 let g:netrw_dirhist_3='/Users/yusuke/dotfiles/tmux-powerline'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/yusuke/Documents/GoForIt/Pods'
 let g:netrw_dirhist_5='/Users/yusuke/Documents/GoForIt/GoForIt.xcworkspace'
 let g:netrw_dirhist_6='/Users/yusuke/Documents/geehiga-portal/public/javascripts'
 let g:netrw_dirhist_7='/Users/yusuke/Documents/geehiga-portal/bower_components/bootstrap/dist/css'
+let g:netrw_dirhist_8='/Users/yusuke/Documents/rails_sample/.git'
