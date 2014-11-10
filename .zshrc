@@ -121,3 +121,5 @@ alias ll="ls - l"
 if [[ "$OSTYPE" =~ "darwin" ]] && [ -d /Applications/MacVim.app/Contents/MacOS ];then
   export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH
 fi
+plugins=( [plugins...] zsh-syntax-highlighting)
+
