@@ -35,3 +35,10 @@
 (global-set-key "\C-m" 'newline-and-indent)
 ;; find-functionをキー割り当て
 (find-function-setup-keys)
+
+;; CmdとOptの入れ替え
+(setq ns-command-modifier (quote meta))
+(setq ns-alternate-modifier (quote super))
+
+;; Google 日本語入力
+(setq default-input-method "MacOSX")
