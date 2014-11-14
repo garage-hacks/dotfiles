@@ -7,7 +7,8 @@ syntastic
 unite.vim
 vim-colors-solarized
 vim-fakeclip
-vim-jade
+vim-gdev
 vim-multiple-cursors
 vim-surround
+vim_goshrepl
 vimproc
