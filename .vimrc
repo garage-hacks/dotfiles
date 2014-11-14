@@ -23,6 +23,12 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundleLazy 'Shougo/neocomplete.vim', {'autoload': {'insert' : 1}}
 NeoBundle     'Shougo/unite.vim'
 NeoBundle     'Shougo/neomru.vim'
+NeoBundle     'Shougo/vimshell'
+
+NeoBundle     'Shougo/vimshell.vim'
+NeoBundle     'Shougo/vimfiler.vim'
+NeoBundle     'itchyny/lightline.vim'
+NeoBundle     't9md/vim-textmanip'
 NeoBundleLazy 'ruby-matchit', {'autoload': {'filetypes': ['ruby', 'eruby', 'haml']}}
 NeoBundle     'altercation/vim-colors-solarized'
 NeoBundle     'kana/vim-fakeclip'

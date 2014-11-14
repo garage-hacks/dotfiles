@@ -5,6 +5,7 @@ neomru.vim
 ruby-matchit
 syntastic
 unite.vim
+vim-airline
 vim-colors-solarized
 vim-fakeclip
 vim-gdev
@@ -12,3 +13,4 @@ vim-multiple-cursors
 vim-surround
 vim_goshrepl
 vimproc
+vimshell
