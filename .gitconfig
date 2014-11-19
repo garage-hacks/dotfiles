@@ -16,6 +16,7 @@
   co = checkout
   cm = commit
   cmam = commit -am
+  cmm = commit -m
   br = branch
   rmc = rm --cached
   log = log -p
